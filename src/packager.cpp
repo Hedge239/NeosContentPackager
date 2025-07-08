@@ -94,6 +94,8 @@ namespace NeosContentPackager   // Internal
         header.format_version = NCPK_FORMAT_VERSION;
         header.content_version = contentVersion;
 
+        // TODO: Set compression
+
         // Write fileTable/fileCount
         header.table_offset = (uint32_t)outputStream.tellp();
         for(const auto& entry : entires) { outputStream.write(reinterpret_cast<const char*>(&entry), sizeof(lib::NCPK_ENTRY)); }

@@ -13,7 +13,8 @@ namespace NeosContentPackager
 
         struct NCPK_HEADER
         {
-            char compression_type[8] = {0};
+            //char compression_type[8] = {0};
+            char ID[5] = { "NCPK" };
 
             int16_t format_version = 1;
             int16_t content_version = 1;

@@ -1,5 +1,5 @@
-#ifndef _NCPK_PACKER_H_
-#define _NCPK_PACKER_H_
+#ifndef _NCPK_PACKAGER_H_
+#define _NCPK_PACKAGER_H_
 
 #include <NeosContentPackager/lib/enumerations.h>
 #include <NeosContentPackager/lib/format.h>
@@ -37,4 +37,4 @@ namespace NeosContentPackager
     NCPK_PACKAGER packageFiles();
 }
 
-#endif /*_NCPK_PACKER*/
+#endif /*_NCPK_PACKAGER_H_*/
