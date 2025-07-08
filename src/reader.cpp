@@ -17,7 +17,7 @@ namespace NeosContentPackager  // external
 
         // Validate file
         if(strcmp("NCPK", header.ID) != 0) { printf("[NCP_READER] [ERROR] Not a valid package : %s\n", path.c_str()); _packageStream.close(); return; }
-        printf("[NCP_READER] [STATUS] Successfully opened : %s", path.c_str());
+        printf("[NCP_READER] [STATUS] Successfully opened : %s\n", path.c_str());
 
         // Seek fileTable
         _packageStream.seekg(header.table_offset, std::ios::beg);

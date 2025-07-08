@@ -21,6 +21,7 @@ target_include_directories(${PROJECT_NAME}  PRIVATE "include")
 # Applications
 option(NCP_BUILD_TESTS "Builds Testing Applications" ON)
     if(NCP_BUILD_TESTS)
+        add_subdirectory(tests)
     endif()
 
 option(NCP_BUILD_UTILITY "Builds NCP CMD utility" ON)

@@ -58,6 +58,7 @@ namespace NeosContentPackager   // Internal
 
         // Add entire to list
         printf("[NCP_PACKER] [STATUS] Written: %s | vPath: %s | Size: [%s]\n", filePath.c_str(), fileEntry.virtual_path, std::to_string(fileEntry.size).c_str());
+        entires.push_back(fileEntry);
         targetStream.close();
     }
 
