@@ -27,7 +27,7 @@ namespace NeosContentPackager  // external
             _packageStream.read(reinterpret_cast<char*>(&entry), sizeof(entry));
             _vPathMap[entry.virtual_path] = entry;
 
-            printf("[NCP_READER] [STATUS] Added vPath : %s", entry.virtual_path);
+            printf("[NCP_READER] [STATUS] Added vPath : %s\n", entry.virtual_path);
         }
 
         printf("[NCP_READER] [SUCCESS] Mounted : %s\n", path.c_str());
@@ -36,12 +36,12 @@ namespace NeosContentPackager  // external
 
     void NCPK_READER::unmount()
     {
-        if(!_packageStream.is_open()) { printf("[NCP_READER] [ERROR] Faild to unmount : nothing"); return; }
+        if(!_packageStream.is_open()) { printf("[NCP_READER] [ERROR] Faild to unmount : nothing\n"); return; }
         
         _packageStream.close();
         _vPathMap.clear();
 
-        printf("[NCP_READER] [SUCCESS] Unmounted Package");
+        printf("[NCP_READER] [SUCCESS] Unmounted Package\n");
         return;
     }
 
