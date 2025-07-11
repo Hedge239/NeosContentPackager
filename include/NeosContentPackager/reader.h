@@ -3,7 +3,6 @@
 
 #include "NeosContentPackager/lib/format.h"
 
-#include <fstream>
 #include <string>
 #include <memory>
 #include <vector>
@@ -13,7 +12,7 @@ namespace NeosContentPackager
 {
     class NCPK_READER
     {
-        std::ifstream _packageStream;
+        std::string _packagePath;
         std::unordered_map<std::string, lib::NCPK_ENTRY> _vPathMap;
 
         public:
