@@ -9,6 +9,3 @@ build/
 CMakePresets.json
 sources.txt
 .clangd
-
-#
-tests/files
