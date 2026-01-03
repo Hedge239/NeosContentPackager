@@ -18,4 +18,4 @@ For the useage of the lib and CMD utility please cite from the wiki [here](TODO)
 
 ## License
 Neo's Content Packager (NCP) is licensed under the MIT License, see [LICENSE.txt](https://github.com/Hedge239/NeosContentPackager/blob/latest-dev/LICENSE.txt) for more information
-> Copyright (c) 2023-2025 Lucas I Kohorst
+> Copyright (c) 2025-2026 Lucas I Kohorst
